@@ -1,0 +1,95 @@
+<!-- This was not a part of the task i got today, but i decided to just play with the code and at least try to be creative. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotitunes</title>
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(119, 121, 118);
+        }
+
+        header {
+            background-color: green; 
+            color: black; 
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        img {
+            display: block;
+            margin: 10px auto;
+            max-width: 45%;
+            height: auto;
+            border: 5px solid whitesmoke;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            margin-top: -536px;
+        }
+        .image-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Align items to the left */
+        }
+
+        .image-container img {
+            max-width: 40%;
+            height: auto;
+            border: 10px solid whitesmoke;
+        }
+        .move-left {
+            margin-left: 2px; /* Move this image to the left */
+
+        }
+
+        .move-right {
+            margin-right: 2px; /* Move this image to the left */
+        }
+        .click-me {
+            text-align: center;
+            font-size: 2em;
+            margin-top: 10px;
+            color: rgb(245, 249, 245);
+        }
+    </style>
+    <script src="app.js"></script>
+</head>
+<body>
+    <header>
+        <h1>🎵Spotitunes🎵</h1>
+    </header>
+   
+    <!-- Wrap the image in an anchor tag -->
+    <a href="https://media.makeameme.org/created/sike-not.jpg" target="_blank">
+    <img src="spotify-playlist.jpeg" alt="Spotitunes Logo">
+    </a>
+    <h2 class ="click-me">↑ !NEW TUNES OUT!↑</h2> 
+    <!-- i felt like trolling someone 😂 -->
+
+    <div class="image-container">
+    <a href="https://www.ticketmaster.com/bryson-tiller-tickets/artist/2171167" target="_blank">
+    <img src="61cifwth-EL._AC_UF894,1000_QL80_.jpg" class="move-left" alt="Image to Move Left">
+    </a> 
+    <!-- so here i put a link "inside" the picture and when i click it, i will come to a new tab and i will see tickets.com -->
+
+    <a href="https://www.ticketmaster.com/drake-tickets/artist/1319371" target="_blank">
+    <img src="6400dc21a4410f7e6049e8ec-ytgmo-drake-poster-nothing-was-the-same.jpg"class="move-right" alt="Image to Move move-right">
+    </a>
+<!-- so here i put a link "inside" the picture and when i click it, i will come to a new tab and i will see tickets.com -->
+<!-- i really tried for a long time to get links under the pictures and making the pictures be align to each other and the same size but after 2 hours i decided to just let it be like that and let the links be on the pictures. -->
+    </div> 
+    </body>
+</html>
